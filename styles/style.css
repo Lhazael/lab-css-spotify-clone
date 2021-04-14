@@ -6,99 +6,104 @@ Green: #00B172
 White: #FFF
 
 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
-
-:root {
-    --header-height: 75px;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-weight: bold;
-    font-size: 80px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 h2 {
-    font-size: 50px;
-    font-style: bold;
+  font-size: 50px;
+  font-style: bold;
+
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: bold;
-    margin-top: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
 }
 
 p {
-    font-size: 27px;
-    margin-top: 10px;
+  font-size: 27px;
+  margin-top: 10px;
 }
 
-.nav-bar {
-    width: 500px;
-    margin: 0 auto;
-    display: row;
-    justify-content: space-around;
-    list-style-type: none;
-  }
-  
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
-    padding-right: 0;
-  }
+header {
+  display: flex;
+  font-size: x-large;
+  font-weight: 800;
+}
 
-nav a {
-    text-decoration: none;
-    color: black;
-  }
+header .nav-bar {
+  float: right;
+  flex: auto;
+  margin: 1rem;
+}
 
 .spotifylogo {
-    width: 150px;
-    margin-top: 1rem;
+  width: 200px;
+  margin: 1rem;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
 }
 
 .concert-background {
-    background-image: url(../images/landing.jpg);
-    background-repeat:no-repeat;
-    background-size: cover;
-    margin: 0;
-    height: 1000px;
-    padding-top: 27%;
-    text-align: center;
-    color: white;
+  background-image: url(../images/landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  height: 1000px;
+  padding-top: 27%;
+  text-align: center;
+  color: white;
 }
 
 body {
-    font-family: "Montserrat";
+  font-family: "Montserrat";
 }
 
 .offers {
-    text-align: center;
-}
-.whatsnew {
-    margin: 10px auto 150px auto;
-    text-align: center;
-    border-bottom: 3px solid #00B172;
-    padding-left: 30px;
-    padding-right: 30px;  
+  text-align: center;
 }
 
+.whatsnew {
+  margin: 10px auto 150px auto;
+  text-align: center;
+  border-bottom: 3px solid #00b172;
+  padding: 0 30px 20px 30px;
+}
+/* Not sure how to fix the border length */
+
 .img {
-    width: 125px;
-    height: 100px;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20px;
+  width: 125px;
+  height: 100px;
+  margin: 0 15% 20px 15%;
 }
 
 #boxes {
@@ -107,36 +112,63 @@ body {
 }
 
 #boxes h3 {
-    color: #00B172;
-    font-weight: 1000;
+  color: #00b172;
+  font-weight: 1000;
 }
 
 #boxes p {
-    width: 70%;
-    font-size: 20px;
-    margin: 50px 30px;
-    text-align: center;
+  width: 70%;
+  font-size: 20px;
+  margin: 50px 30px;
+  text-align: center;
 }
 
-#boxes > div {
-    display: flex;
-    justify-content: center;
-
-}
-#boxes > div > article {
-  display: flex;
+.bloc {
+  display: inline-flex;
   justify-content: center;
-  flex-direction: column;
+  flex: auto;
   align-items: center;
+}
+/* Not sure how to align properly the 3 boxes */
+
+#boxes > div > article {
+  display: inline-block;
+  justify-content: center;
+  flex-direction:;
+  align-items: center;
+  margin: 33%;
 }
 
 .green-background {
-    background-color: #00B172;
-    background-size: cover;
-    background-repeat:no-repeat;
-    margin: 5%;
-    height: 1000px;
-    padding-top: 27%;
-    text-align: center;
-    color: white;
+  background-color: #00b172;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5%;
+  height: 1000px;
+  padding-top: 5%;
+  text-align: center;
+  color: white;
+}
+/* Alignment and text sizing problems */
+
+#text-bloc {
+    text-align: left;
+    flex:auto;
+    margin: 0;
+}
+
+#text-bloc h2 {
+    border-bottom: 2px solid white;
+    margin: 10px 35% 10px 10%;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+#text-bloc article {
+    text-align: left;
+    display: flex;
+}
+
+#text-bloc article h3 {
+    font-size: 25px;
 }
